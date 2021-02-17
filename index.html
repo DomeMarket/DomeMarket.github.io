@@ -4,13 +4,19 @@
     <title>Dome Market</title>
   </head>
   <body>
-    <p>A simple marketplace for trading.</p>
-  <script language="javascript" type="text/javascript">
-	now = new Date();
-	localtime = now.toString();
-	utctime = now.toGMTString();
-	document.write("<b>Helyi idő:</b> " + localtime + "<BR>");
-	document.write("<b>UTC idő:</b> " + utctime);
-	</script>
+	A simple marketplace for trading.<br>
+	This is the first time you see a sentence here. Enjoy it.<br>
+	
+	<script language="javascript" type="text/javascript">
+	const now = new Date();
+
+	const hours = now.getHours();
+	const mins = now.getMinutes();
+	const secs = now.getSeconds();
+		
+	document.write("<font size=+5>");
+	document.write(hours + " : " + mins + " : " + secs);
+	document.write("</font>");
+		
   </body>
 </html>
